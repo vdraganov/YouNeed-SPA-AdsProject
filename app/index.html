@@ -10,7 +10,7 @@
 
 	
 </head>
-<body ng-app="AddsAppModule" ng-controller='AddsAppController'>
+<body ng-app="YouNeedAppModule" ng-controller='YouNeedAppController'>
 	<div class="page-container">
 		<div id="header-container-nav">
 			<div id="nav-btn-login">
@@ -28,7 +28,9 @@
 			</div>
 		</div>
 	</header>
-	<nav></nav>
+	<div ng-view>
+		
+	</div>
     
 
     <!-- <div id="box-login">
@@ -55,7 +57,7 @@
 	<!-- Loading AngularJS, modules, servieces and controllers -->
 	<script type="text/javascript" src="scripts/libs/angular/angular.js"></script>
 	<script type="text/javascript" src="scripts/libs/angular/angular-route.js"></script>
-	<script type="text/javascript" src="scripts/ad(d)s-app.js"></script>
+	<script type="text/javascript" src="scripts/YouNeed-app.js"></script>
 	<script type="text/javascript" src="scripts/controllers/controller-main.js"></script>
 
 </body>

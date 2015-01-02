@@ -1,3 +1,3 @@
-AddsApp.controller('AddsAppController', function ($scope) {
+AdsApp.controller('YouNeedAppController', function ($scope) {
 	$scope.name = 'name';
 })

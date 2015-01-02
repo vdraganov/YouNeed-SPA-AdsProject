@@ -25,6 +25,7 @@ header {
 	width: 100%;
 	padding: 40px 0 20px;
 	border-top: 8px solid #333;
+	background-color: #27494b;
 }
 
 header div:not(.page-container) {
@@ -35,6 +36,10 @@ header div:not(.page-container) {
 	width: 10%;
 	/*height: 55px;*/
 }
+
+/*#container-logo img {
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}*/
 
 #header-container-nav {
 	float: right;
