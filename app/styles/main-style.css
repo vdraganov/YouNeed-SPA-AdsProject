@@ -21,6 +21,15 @@ body{
   /*height: 1200px;*/
 }
 
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-family: Ubuntu-BoldItalic;
+	font-size: 2.14em;
+}
+
 header {
 	width: 100%;
 	padding: 40px 0 20px;
@@ -79,6 +88,103 @@ div[id^="nav-btn-"]:hover {
 #nav-btn-register {
 	border-bottom-right-radius: 10px;
 }
+
+/*---------LOGIN CSS---------*/
+
+section .page-container {
+	background-color: #DBE8F9;
+}
+
+.left_col {
+	padding: 20px;
+	width: 70%;
+	min-width: 420px;
+}
+
+div[id*="nav-menu"] {
+	font-size: 0.71em;
+	color: #c8c8c8;
+}
+
+div[id*="nav-menu"] a {
+	color: #8e8e8e;
+}
+
+.entry {
+	width: 60%;
+	display: inline-block;
+	border-top: dashed #ffb739 1px;
+}
+
+div[class^="placeholder"] {
+	margin: 10px;
+}
+
+.entry label {
+	font-size: 1.2em;
+	width: 100px;
+}
+
+.entry input {
+	width: 200px;
+	border-radius: 5px;
+	border: solid 1px #ddd;
+}
+
+#btn-login button {
+	width: 100%;
+	border-radius: 5px;
+	border: solid 1px #ddd;
+	background-color: #A0AEC1;
+}
+
+#btn-login label {
+	float: left;
+	color: #FFFFFF;
+}
+
+#btn-login img, #btn-register img {
+	width: auto;
+	height: 90%;
+	margin-right: 5px;
+	vertical-align: middle;
+	float: right;
+}
+
+/*---------REGISTER CSS---------*/
+.entry-register {
+	width: 70%;
+	display: inline-block;
+	border-top: dashed #ffb739 1px;
+}
+
+.entry-register table {
+	width: 100%;
+}
+
+.entry-register td {
+	width: 49%;
+}
+
+.entry-register label{
+	padding: 5px 5px 0 0;
+}
+
+#btn-register button {
+	width: 100%;
+	border-radius: 5px;
+	border: solid 1px #ddd;
+	background-color: #A0AEC1;
+}
+
+#btn-register label {
+	padding: 0;
+	width: 100px;
+	font-size: 1.2em;
+	float: left;
+	color: #FFFFFF;
+}
+
 
 /*-------Logo Animation-------*/
 .animated { 

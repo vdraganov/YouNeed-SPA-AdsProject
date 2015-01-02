@@ -1,3 +1,5 @@
-AdsApp.controller('YouNeedAppController', function ($scope) {
-	$scope.name = 'name';
+AdsApp.controller('YouNeedAppController', function ($scope, mainData) {
+	mainData.getAllAds(function (resp) {
+		$scope.data = resp;
+	});
 })

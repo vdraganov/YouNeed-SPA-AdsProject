@@ -24,14 +24,15 @@
 	<header>
 		<div class="page-container">
 			<div id="animated-example" class="animated fadeInDown"><div id="container-logo">
-				<img src="img/YouNeed-logo.png"></div>
+				<a href="#/ads"><img src="img/YouNeed-logo.png"></div></a>
 			</div>
 		</div>
 	</header>
-	<div ng-view>
-		
-	</div>
-    
+	<section>
+		<div class="page-container" ng-view>
+			
+		</div>
+    </section>
 
     <!-- <div id="box-login">
 				<div class="field-input">
@@ -58,7 +59,9 @@
 	<script type="text/javascript" src="scripts/libs/angular/angular.js"></script>
 	<script type="text/javascript" src="scripts/libs/angular/angular-route.js"></script>
 	<script type="text/javascript" src="scripts/YouNeed-app.js"></script>
+	<script type="text/javascript" src="scripts/directives/custom-directive-for-headElement.js"></script>
 	<script type="text/javascript" src="scripts/controllers/controller-main.js"></script>
+	<script type="text/javascript" src="scripts/services/mainPage.js"></script>
 
 </body>
 </html>
