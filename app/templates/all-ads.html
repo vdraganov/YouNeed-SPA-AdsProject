@@ -54,5 +54,23 @@
 			</li>
 		</ul>
 	</div>
-	<div class="right_col" id="display-filters">Filters To Be Loaded!!</div>
+	<div class="right_col" id="display-filters">
+		<div class="panel panel-primary">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Categories</h3>
+		  </div>
+		  	<a href="#" class="list-group-item" ng-repeat="category in categories">
+		    	{{category.name}}
+		  	</a>
+		</div>
+
+		<div class="panel panel-primary">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Towns</h3>
+		  </div>
+		  <a href="#" class="list-group-item" ng-repeat="town in towns">
+		    {{town.name}}
+		  </a>
+		</div>
+	</div>
 </div>
