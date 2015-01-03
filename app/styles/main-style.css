@@ -91,7 +91,7 @@ div[id^="nav-btn-"]:hover {
 
 /*---------LOGIN CSS---------*/
 
-section .page-container {
+.page-container {
 	background-color: #DBE8F9;
 }
 
@@ -125,7 +125,7 @@ div[class^="placeholder"] {
 	width: 100px;
 }
 
-.entry input {
+.entry input, table input {
 	width: 200px;
 	border-radius: 5px;
 	border: solid 1px #ddd;
@@ -184,6 +184,103 @@ div[class^="placeholder"] {
 	float: left;
 	color: #FFFFFF;
 }
+
+#btn-register {
+	margin: 10px 0 0 0;
+}
+
+/*---------Display AllAds & filters CSS---------*/
+ul {
+	list-style: none;
+}
+
+.content-container {
+	width: 100%;
+}
+
+.content-container > .left_col {
+	float: left;
+}
+
+.right_col {
+	width: 25%;
+	min-width: 80px;
+	float: right;
+}
+
+#all-ads-visiolizer div:not(class*=["ad"]) {
+	display: inline;
+}
+
+#display-all-ads-container {
+	height: 100%;
+}
+
+/*---------single Ad Display CSS---------*/
+ul div{
+	display: block;
+	
+	width: 100%;
+}
+
+.left_col_fullWidth {
+	width: 100%;
+}
+
+ul li {
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 96%;
+}
+
+.ad-container {
+	border: 1px solid #000;
+	padding-bottom: 20px; 
+}
+
+.ad-title > *, .ad-content > * {
+	display: inline-block;
+}
+
+.ad-title > .left_col {
+	margin: 0;
+	padding: 10px;
+}
+
+.ad-title span {
+	/*margin-top: auto;*/
+	vertical-align: bottom;
+	text-align: center;
+	float: right;
+}
+
+.ad-title, .ad-content {
+	width: 100%;
+}
+
+.ad-content {
+	border-top:  1px solid #000;
+}
+
+.left-container {
+	width:30%;
+	background-color: red;
+}
+.center-container {
+	width:59%;
+	background-color: green;
+}
+.right-container {
+	width:9%;
+	background-color: blue;
+}
+
+.img-container {
+	width: 80%;
+	margin: auto;
+	vertical-align: middle;
+}
+
 
 
 /*-------Logo Animation-------*/

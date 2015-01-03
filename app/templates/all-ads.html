@@ -1,0 +1,29 @@
+<div class="content-container" id="all-ads-visiolizer">
+	<div class="left_col" id="display-all-ads-container">
+		<ul class="left_col_fullWidth">
+			<li ng-repeat="ad in data.ads">
+				<div class="ad-container">
+					<div class="ad-title">
+						<h3 class="left_col"><strong>{{ad.title}}</strong></h3>
+						<span class="right_col">{{ad.date | date: 'dd-MMM-yyyy'}}</span>
+					</div>
+					<div class="ad-content">
+						<div class="left-container">
+							<div class="img-container">
+								<img src="" ng-src="{{ad.imageDataUrl}}">
+							</div>
+						</div>	
+						<div class="center-container">Content goes here!
+						</div>
+						<div class="right-container">
+							<div class="content-container">
+								img
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="right_col" id="display-filters">Filters To Be Loaded!!</div>
+</div>
