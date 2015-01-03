@@ -13,11 +13,40 @@
 								<img src="" ng-src="{{ad.imageDataUrl}}">
 							</div>
 						</div>	
-						<div class="center-container">Content goes here!
+						<div class="center-container">
+							<p>{{ad.text}}</p>
+							<table>
+								<tr>
+									<td class="left">
+										Posted by: 
+									</td>
+									<td>
+										{{ad.ownerName}}
+									</td>
+								</tr>
+
+								<tr>
+									<td class="left">
+										Email:
+									</td>
+									<td>
+										{{ad.ownerEmail}}
+									</td>
+								</tr>
+
+								<tr>
+									<td class="left">
+										Phone:
+									</td>
+									<td>
+										{{ad.ownerPhone}}
+									</td>
+								</tr>		
+							</table>
 						</div>
 						<div class="right-container">
 							<div class="content-container">
-								img
+								
 							</div>
 						</div>
 					</div>
