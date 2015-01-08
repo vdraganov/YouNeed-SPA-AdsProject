@@ -10,7 +10,7 @@
 
 	
 </head>
-<body ng-app="YouNeedAppModule" ng-controller='YouNeedAppController'>
+<body ng-app="YouNeedAppModule">
 	<div class="page-container">
 		<div id="header-container-nav">
 			<div id="nav-btn-login">
@@ -58,10 +58,16 @@
 	<!-- Loading AngularJS, modules, servieces and controllers -->
 	<script type="text/javascript" src="scripts/libs/angular/angular.js"></script>
 	<script type="text/javascript" src="scripts/libs/angular/angular-route.js"></script>
+	<script type="text/javascript" src="scripts/libs/angular/angular-resource.js"></script>
 	<script type="text/javascript" src="scripts/YouNeed-app.js"></script>
 	<script type="text/javascript" src="scripts/directives/custom-directive-for-headElement.js"></script>
 	<script type="text/javascript" src="scripts/controllers/controller-main.js"></script>
+	<script type="text/javascript" src="scripts/controllers/login-controller.js"></script>
+	<script type="text/javascript" src="scripts/controllers/register-controller.js"></script>
+	
 	<script type="text/javascript" src="scripts/services/mainPage.js"></script>
+	<script type="text/javascript" src="scripts/services/data/townsData.js"></script>
+	<script type="text/javascript" src="scripts/services/data/userData.js"></script>
 
 </body>
 </html>

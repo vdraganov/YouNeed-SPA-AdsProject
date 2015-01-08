@@ -7,67 +7,68 @@
         <table>
           <tr>
             <td>
-              <label for="username">Username: </label>
+              <label for="input-register-username">Username: </label>
             </td>
           </tr>
           <tr>
             <td>
-              <input name="username" type="text" id="input-register-username">
+              <input name="username" type="text" id="input-register-username" ng-model="user.username">
               </td>
           </tr>
 
           <tr>
             <td>
-              <label for="password">Password: </label>
+              <label for="input-register-password">Password: </label>
             </td>
             <td>
-              <label for="password-confirmation">Confirm password: </label>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <input name="password" type="password" id="input-register-password">
-            </td>
-            <td>
-              <input name="password-confirmation" type="password" id="input-register-password-confirmation">
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <label for="name">Name: </label>
-            </td>
-            <td>
-              <label for="email">Email: </label>
+              <label for="input-register-password-confirmation">Confirm password: </label>
             </td>
           </tr>
           <tr>
             <td>
-              <input name="name" type="text" id="input-register-name"> 
+              <input name="password" type="password" id="input-register-password" ng-model="user.password">
             </td>
             <td>
-              <input name="email" type="email" id="input-register-email">
+              <input name="password-confirmation" type="password" id="input-register-password-confirmation" ng-model="user.confirmPassword">
             </td>
           </tr>
 
           <tr>
             <td>
-              <label for="phoneNumber">Phone: </label>
+              <label for="input-register-name">Name: </label>
             </td>
             <td>
-              <label for="town">Town: </label>
+              <label for="input-register-email">Email: </label>
             </td>
           </tr>
           <tr>
             <td>
-              <input name="phoneNumber" type="text" id="input-register-phoneNumber">
+              <input name="name" type="text" id="input-register-name" ng-model="user.name">
             </td>
             <td>
-              <input name="town" type="text" id="input-register-town">
+              <input name="email" type="email" id="input-register-email" ng-model="user.email">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="input-register-phoneNumber">Phone: </label>
+            </td>
+            <td>
+              <label for="input-register-town">Town: </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input name="phoneNumber" type="text" id="input-register-phoneNumber" ng-model="user.phone">
+            </td>
+            <td>
+              <select name="inputTown" id="input-register-town" ng-options="town.id as town.name for town in towns" ng-model="user.townId">             
+              </select>
             </td>
           </tr>
         </table>
-      <!-- 
+      <!--
         <div class="placeholder">
           <label for="username">Username: </label></br><input name="username" type="text" id="input-register-username"><br>
         </div>
@@ -78,17 +79,17 @@
         </div>
 
         <div class="placeholder">
-          <label for="name">Name: </label></br><input name="name" type="text" id="input-register-name">  
+          <label for="name">Name: </label></br><input name="name" type="text" id="input-register-name">
           <label for="email">Email: </label></br><input name="email" type="text" id="input-register-email">
         </div>
 
         <div class="placeholder">
-          <label for="phoneNumber">Phone: </label></br><input name="phoneNumber" type="text" id="input-register-phoneNumber">  
-          <label for="town">Town: </label></br><input name="town" type="text" id="input-register-town">  
+          <label for="phoneNumber">Phone: </label></br><input name="phoneNumber" type="text" id="input-register-phoneNumber">
+          <label for="town">Town: </label></br><input name="town" type="text" id="input-register-town">
         </div>
    -->
         <div class="placeholder-btn" id="btn-register">
-          <button>
+          <button ng-click="register(user)">
             <label for="btn-register">Register</label>
             <img src="img/btn-icons/ctrl-login.png">
           </button>
@@ -98,6 +99,6 @@
         <p>Memeber?  <a href="#/login">Login</a></p>
         </div>
       </div>
-    </div>    
+    </div>
   </div>
 </section>

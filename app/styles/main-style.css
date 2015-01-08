@@ -216,6 +216,11 @@ ul {
 	height: 100%;
 }
 
+ul.pagination {
+	position: relative;
+	left: 34%;
+}
+
 /*---------single Ad Display CSS---------*/
 ul div{
 	display: block;
