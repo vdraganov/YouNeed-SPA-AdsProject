@@ -1,11 +1,12 @@
 var AdsApp = angular.module('YouNeedAppModule', [
 	'ngRoute',
-	'ngResource'
+	'ngResource',
+	'LocalStorageModule'
 	])
 
 AdsApp.constant('baseServiceUrl', 'http://softuni-ads.azurewebsites.net/api/')
 
-AdsApp.config(['$routeProvider', function($routeProvider) {
+AdsApp.config(['$routeProvider', 'localStorageServiceProvider', function($routeProvider, localStorageServiceProvider) {
 	$routeProvider.when('/ads', {
 		templateUrl:'templates/all-ads.html',
 		controller: 'YouNeedAppController'
@@ -23,6 +24,11 @@ AdsApp.config(['$routeProvider', function($routeProvider) {
 	.otherwise({
         redirectTo: '/ads'
     });
+
+
+	// Local storage settings
+    // localStorageServiceProvider.setStorageType('LocalStorage');
+    // localStorageServiceProvider.setPrefix('AdsApp');
 }]);
 
 

@@ -1,4 +1,4 @@
-AdsApp.factory('userData', ['$resource', 'baseServiceUrl', 'authentication', function ($resource, baseServiceUrl, authentication){
+AdsApp.factory('userData', ['$resource', 'baseServiceUrl', 'authentication', function ($resource, baseServiceUrl, authentication) {
 	function registerUser (user) {
 		return $resource(baseServiceUrl + 'user/Register')
 			.save(user)
@@ -10,11 +10,20 @@ AdsApp.factory('userData', ['$resource', 'baseServiceUrl', 'authentication', fun
 
 	function loginUser (user) {
 		$resource(baseServiceUrl + 'user/Login')
-		// body...
+			.save(user)
+			.$promise
+			.then(function (data) {
+				authentication.saveUser(data);
+			});
 	}
 
 	function logoutUser () {
-		// body...
+		$resource(baseServiceUrl + 'user/Logout')
+		.save(user)
+			.$promise
+			.then(function (data) {
+				authentication.removeUser();
+			});
 	}
 
 	return {

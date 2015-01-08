@@ -1,3 +1,5 @@
-AdsApp.controller('LoginController', ['$scope', function($scope){
-	
+AdsApp.controller('LoginController', ['$scope', 'userData', function($scope, userData){
+	$scope.login = function (user) {
+		userData.login(user);
+	}
 }])
