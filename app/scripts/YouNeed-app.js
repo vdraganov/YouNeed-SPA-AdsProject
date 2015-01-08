@@ -9,7 +9,7 @@ AdsApp.constant('baseServiceUrl', 'http://softuni-ads.azurewebsites.net/api/')
 AdsApp.config(['$routeProvider', 'localStorageServiceProvider', function($routeProvider, localStorageServiceProvider) {
 	$routeProvider.when('/ads', {
 		templateUrl:'templates/all-ads.html',
-		controller: 'YouNeedAppController'
+		controller: 'PublicAdsController'
 	})
 	.when('/login', {
 		templateUrl:'templates/login.html',

@@ -1,76 +1,10 @@
 <div class="content-container" id="all-ads-visiolizer">
 	<div class="left_col" id="display-all-ads-container">
-		<ul class="left_col_fullWidth">
-			<li ng-repeat="ad in data.ads">
-				<div class="ad-container">
-					<div class="ad-title">
-						<h3 class="left_col"><strong>{{ad.title}}</strong></h3>
-						<span class="right_col">{{ad.date | date: 'dd-MMM-yyyy'}}</span>
-					</div>
-					<div class="ad-content">
-						<div class="left-container">
-							<div class="img-container">
-								<img src="" ng-src="{{ad.imageDataUrl}}">
-							</div>
-						</div>
-						<div class="center-container">
-							<p>{{ad.text}}</p>
-							<table>
-								<tr>
-									<td class="left">
-										Posted by:
-									</td>
-									<td>
-										{{ad.ownerName}}
-									</td>
-								</tr>
-
-								<tr>
-									<td class="left">
-										Email:
-									</td>
-									<td>
-										{{ad.ownerEmail}}
-									</td>
-								</tr>
-
-								<tr>
-									<td class="left">
-										Phone:
-									</td>
-									<td>
-										{{ad.ownerPhone}}
-									</td>
-								</tr>
-							</table>
-						</div>
-						<div class="right-container">
-							<div class="content-container">
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</li>
-		</ul>
+		<public-ads></public-ads>
 	</div>
-	<div class="right_col" id="display-filters">
-		<div class="panel panel-primary">
-		  <div class="panel-heading">
-		    <h3 class="panel-title">Categories</h3>
-		  </div>
-		  	<a href="#" class="list-group-item" ng-repeat="category in categories">
-		    	{{category.name}}
-		  	</a>
-		</div>
 
-		<div class="panel panel-primary">
-		  <div class="panel-heading">
-		    <h3 class="panel-title">Towns</h3>
-		  </div>
-		  <a href="#" class="list-group-item" ng-repeat="town in towns">
-		    {{town.name}}
-		  </a>
-		</div>
+	<div class="right_col" id="display-filters">
+		<categories></categories>
+		<towns></towns>
 	</div>
 </div>

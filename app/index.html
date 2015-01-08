@@ -11,16 +11,6 @@
 	
 </head>
 <body ng-app="YouNeedAppModule">
-	<div class="page-container">
-		<div id="header-container-nav">
-			<div id="nav-btn-login">
-				<a href="#/login">Login</a>
-			</div>
-			<div id="nav-btn-register">
-				<a href="#/register">Register</a>
-			</div>
-		</div>
-	</div>	
 	<header>
 		<div class="page-container">
 			<div id="animated-example" class="animated fadeInDown"><div id="container-logo">
@@ -55,18 +45,24 @@
 	<script type="text/javascript" src="scripts/libs/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="styles/bootstrap/js/bootstrap.min.js"></script>
 
-	<!-- Loading AngularJS, modules, servieces and controllers -->
+	<!-- Loading AngularJS, modules, directives, servieces and controllers -->
 	<script type="text/javascript" src="scripts/libs/angular/angular.js"></script>
 	<script type="text/javascript" src="scripts/libs/angular/angular-route.js"></script>
 	<script type="text/javascript" src="scripts/libs/angular/angular-resource.js"></script>
 	<script type="text/javascript" src="scripts/libs/angular/angular-local-storage.js"></script>
+
 	<script type="text/javascript" src="scripts/YouNeed-app.js"></script>
+
 	<script type="text/javascript" src="scripts/directives/custom-directive-for-headElement.js"></script>
+	<script type="text/javascript" src="scripts/directives/public-ads.js"></script>
+
 	<script type="text/javascript" src="scripts/controllers/controller-main.js"></script>
+	<script type="text/javascript" src="scripts/controllers/public-ads-controller.js"></script>
 	<script type="text/javascript" src="scripts/controllers/login-controller.js"></script>
 	<script type="text/javascript" src="scripts/controllers/register-controller.js"></script>
 	
 	<script type="text/javascript" src="scripts/services/mainPage.js"></script>
+	<script type="text/javascript" src="scripts/services/data/adsData.js"></script>
 	<script type="text/javascript" src="scripts/services/data/townsData.js"></script>
 	<script type="text/javascript" src="scripts/services/data/userData.js"></script>
 	<script type="text/javascript" src="scripts/services/authentication.js"></script>
