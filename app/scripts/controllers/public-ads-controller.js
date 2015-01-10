@@ -1,4 +1,4 @@
-AdsApp.controller('PublicAdsController', ['$scope', 'authentication','adsData', function ($scope, authentication, adsData) {
+AdsApp.controller('PublicAdsController', ['$scope', 'authentication', 'adsData', function ($scope, authentication, adsData) {
 	$scope.ready = false;
 
 	$scope.isLoggedIn = authentication.isLoggedIn();

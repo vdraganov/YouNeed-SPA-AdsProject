@@ -1,6 +1,7 @@
 <div class="content-container" id="all-ads-visiolizer">
 	<logger ng-if="!isLoggedIn"></logger>
-	<logged-in-topbar  ng-if="isLoggedIn"></logged-in-topbar> 
+	<logged-in-topbar  ng-if="isLoggedIn"></logged-in-topbar>
+	<logged-in-nav  ng-if="isLoggedIn"></logged-in-nav>
 	<div class="left_col" id="display-all-ads-container">
 		<public-ads></public-ads>
 	</div>

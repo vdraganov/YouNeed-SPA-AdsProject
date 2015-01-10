@@ -5,4 +5,4 @@ AdsApp.directive('loggedInTopbar', function () {
 		templateUrl: 'templates/directive/logged-in-topNav.html',
 		replace: true
 	}
-}
+})
