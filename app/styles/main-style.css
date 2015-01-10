@@ -51,15 +51,15 @@ header div:not(.page-container) {
 }*/
 
 #header-container-nav {
-	float: right;
+	position: absolute;
+	top: 2px;
+	left: 68%;
 	width: 16%;
-	height: auto;
 	min-height: 30px;
-	margin: 0 10% 0 0;	
+	/*margin: 0 10% 0 0;	*/
 }
 
 #header-container-nav div {
-	position: absolute;
 	top: 10px;
 	display: inline;
 }
@@ -76,6 +76,14 @@ div[id^="nav-btn-"]:hover {
 	text-align: center;
 	padding: 5px 13px 8px;
 	background-color: #E9EAEE;
+}
+
+#header-container-nav > div[id^="nav-btn-"]:hover {
+	position: relative;
+	vertical-align: middle;
+	text-align: center;
+	padding: 5px 13px 8px;
+	background-color: #A0AEC1;
 }
 
 

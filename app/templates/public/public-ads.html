@@ -1,5 +1,6 @@
 <ul class="left_col_fullWidth">
-	<li ng-repeat="ad in adsData.ads">
+	<img src="img/loading.gif" ng-hide="ready" width="150px">
+	<li ng-repeat="ad in adsData.ads" ng-cloack >
 		<div class="ad-container">
 			<div class="ad-title">
 				<h3 class="left_col"><strong>{{ad.title}}</strong></h3>

@@ -9,17 +9,20 @@ AdsApp.factory('userData', ['$resource', 'baseServiceUrl', 'authentication', fun
 	}
 
 	function loginUser (user) {
-		$resource(baseServiceUrl + 'user/Login')
-			.save(user)
-			.$promise
+		var resource = $resource(baseServiceUrl + 'user/Login')
+			.save(user);
+			
+		resource.$promise
 			.then(function (data) {
 				authentication.saveUser(data);
 			});
+
+		return resource;
 	}
 
 	function logoutUser () {
-		$resource(baseServiceUrl + 'user/Logout')
-		.save(user)
+		return $resource(baseServiceUrl + 'user/Logout')
+			.save(user)
 			.$promise
 			.then(function (data) {
 				authentication.removeUser();
