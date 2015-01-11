@@ -1,6 +1,6 @@
 AdsApp.directive('loggedInNav', function () {
 	return {
-		controller: 'PublicAdsController',
+		controller: 'LoginController',
 		restrict: 'E',
 		templateUrl: 'templates/directive/logged-in-nav.html',
 		replace: true

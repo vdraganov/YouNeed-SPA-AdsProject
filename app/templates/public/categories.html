@@ -2,7 +2,7 @@
 		<div class="panel-heading">
 		<h3 class="panel-title">Categories</h3>
   	</div>
-  	<a href="#" class="list-group-item" ng-repeat="category in categories">
+  	<a href="#" class="list-group-item" ng-repeat="category in categories" ng-click="categoryClicked(category)">
     	{{category.name}}
 	</a>
 </div>

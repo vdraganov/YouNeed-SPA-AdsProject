@@ -2,7 +2,7 @@
   <div class="panel-heading">
     <h3 class="panel-title">Towns</h3>
   </div>
-  <a href="#" class="list-group-item" ng-repeat="town in towns">
+  <a href="#" class="list-group-item" ng-repeat="town in towns" ng-click="townClicked(town)">
     {{town.name}}
   </a>
 </div>

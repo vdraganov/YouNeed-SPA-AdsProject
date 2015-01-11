@@ -3,8 +3,8 @@ AdsApp.factory('adsData', ['$resource', 'baseServiceUrl', function ($resource, b
 		update: { method:'PUT' }
 	})
 
-	function getPublicAds () { //pageSize, startPage
-		return resource.get();
+	function getPublicAds (filterParams) {console.log(filterParams);
+		return resource.get(filterParams);
 	}
 
 	function editAd (adId, ad) {

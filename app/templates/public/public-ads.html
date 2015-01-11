@@ -48,6 +48,13 @@
 
 					</div>
 				</div>
+				<pagination 
+					page="currentPage" 
+					ng-model="startPage" 
+					total-items="adsData.numItems" 
+					ng-change="pageChanged()" 
+					items-per-page="pageSize">
+				</pagination>
 			</div>
 		</div>
 	</li>

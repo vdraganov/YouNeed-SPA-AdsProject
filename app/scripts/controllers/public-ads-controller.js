@@ -1,12 +1,25 @@
-AdsApp.controller('PublicAdsController', ['$scope', 'authentication', 'adsData', function ($scope, authentication, adsData) {
+AdsApp.controller('PublicAdsController', ['$scope', 'adsData', 'filter', function ($scope, adsData, filter) {
 	$scope.ready = false;
 
-	$scope.isLoggedIn = authentication.isLoggedIn();
+	function loadPublicAds (filterParams) {
+		filterParams = filterParams || {};
 
-	adsData.getPublicAds()
-		.$promise
-		.then(function (data) {
-			$scope.adsData = data;
-			$scope.ready = true;
-		})
+		adsData.getPublicAds(filterParams)
+			.$promise
+			.then(function (data) {
+				$scope.adsData = data;
+				$scope.ready = true;
+			});
+	}
+
+	loadPublicAds();
+
+	$scope.$on('categoryClicked', function (category) {
+		loadPublicAds(filter.getFilterParams());
+	});
+
+	$scope.$on('townClicked', function (town) {
+		loadPublicAds(filter.getFilterParams());
+	})
+
 }])
