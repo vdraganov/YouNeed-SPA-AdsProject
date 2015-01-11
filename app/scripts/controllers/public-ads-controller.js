@@ -14,6 +14,10 @@ AdsApp.controller('PublicAdsController', ['$scope', 'adsData', 'filter', functio
 
 	loadPublicAds();
 
+	$scope.pageChanged = function function_name (argument) {
+		// body...
+	}
+
 	$scope.$on('categoryClicked', function (category) {
 		loadPublicAds(filter.getFilterParams());
 	});

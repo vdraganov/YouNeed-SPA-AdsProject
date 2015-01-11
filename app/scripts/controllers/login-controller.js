@@ -6,4 +6,9 @@ AdsApp.controller('LoginController', ['$scope', '$location', 'userData', functio
 				$location.path('/');
 			});
 	}
+
+	$scope.logoutClicked = function () {
+		localStorage.clear();
+		$location.path('/home');
+	}
 }])

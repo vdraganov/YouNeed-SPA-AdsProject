@@ -29,6 +29,7 @@ AdsApp.factory('authentication', function() {
 	}
 
 	function removeUser() {
+		localStorage.clear();
 		localStorage.removeItem(key);
 	}
 
